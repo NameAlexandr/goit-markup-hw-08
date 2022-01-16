@@ -13,4 +13,8 @@
   align-items: center;
   background-color: inherit;
   border: none;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }

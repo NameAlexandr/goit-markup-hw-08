@@ -52,8 +52,31 @@
         </div>
     </div>
 <!--- мобильное меню --->
-    <div class="backdrop is-hidden" data-menu>
-
+    <div class="mobile-backdrop is-opened" data-menu-container>
+        <div>
+            <ul>
+                <li>Студия</li>
+                <li>Портфолио</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>+38 096 111 11 11</li>
+                <li>info@devstudio.com</li>
+            </ul>
+            <ul>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>LinkedIn</li>
+            </ul>
+        </div>
+        <button class="close-mobile-menu" type="button" data-menu-close>
+            <svg>
+                <use href='./Images/symbol-defs.svg#icon-close_40px'></use>
+            </svg>
+        </button>
     </div>
 <!----- навигация ----->
         <header class="header">
@@ -92,7 +115,7 @@
         <header class="mobile-header">
             <div class="container container-header-mobile">
                 <a class="header__logo" href=""><span class="header__logo-web">Web</span>Studio</a>
-                <button class="burgerbox" data-menu-button type="menu">
+                <button class="burgerbox" data-burger-btn type="menu">
                     <svg class="burger" width='40' height='40px'>
                         <use href='./Images/symbol-defs.svg#icon-menu-40px'></use>
                     </svg>
@@ -453,5 +476,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
