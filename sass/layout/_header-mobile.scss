@@ -1,15 +1,16 @@
-@media screen and (min-width: 768px) {
-  .header-mobile {
-    display: none;
-  }
-}
-
 .container-header-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .burgerbox {
-  display: block;
-  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border: none;
 }
