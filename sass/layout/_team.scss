@@ -7,9 +7,47 @@
 }
 .team {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 .team__card:not(:last-child) {
   margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__card:nth-child(1),
+  .team__card:nth-child(3) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__card:nth-child(2),
+  .team__card:nth-child(4) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__card:nth-child(1),
+  .team__card:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+.team__img {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .team__cardinfo {
   background-color: var(--primary-background-color);

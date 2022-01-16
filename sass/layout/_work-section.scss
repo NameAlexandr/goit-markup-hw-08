@@ -4,6 +4,11 @@
 .works {
   display: flex;
 }
+.section--no-padding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 
 .works__photo {
   position: relative;

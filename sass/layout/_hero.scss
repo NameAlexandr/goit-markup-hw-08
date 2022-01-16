@@ -10,6 +10,32 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/Images/hero-480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/Images/hero-768.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .hero__tittle {
   text-decoration: none;
@@ -26,6 +52,20 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    width: 360px;
+  }
 }
 .hero__button {
   color: var(--primary-text-color);

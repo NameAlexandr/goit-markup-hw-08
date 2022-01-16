@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
+.container-header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burgerbox {
+  display: block;
+  width: 40px;
+}
