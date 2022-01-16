@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  margin-top: 50px;
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link {
+  border: 1px solid var(--rectangle-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--rectangle-color);
+  fill: var(--rectangle-color);
+  transition-property: fill, color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: currentColor;
+    border: 1px solid var(--accent-color);
+  }
+}
