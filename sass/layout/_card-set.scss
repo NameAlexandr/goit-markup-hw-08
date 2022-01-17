@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .card-set__link {
   display: block;
@@ -64,10 +67,23 @@
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 354px;
+  }
 }
 .card-set__thumb {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+}
+.card-set__image {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .card-set__tittle {
   font-weight: 700;

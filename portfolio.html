@@ -13,6 +13,52 @@
 </head>
 <body>
 <!----- навигация ----->
+<!--- мобильное меню --->
+    <div class="mobile-backdrop is-opened" data-menu-container>
+        <div class="menu-site-nav">
+            <ul class="menu-site-nav__list">
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link current-menu" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link active-menu" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-auth-nav">
+            <ul class="menu-auth-nav__list">
+                <li class="menu-auth-nav__item">
+                    <a class="menu-auth-nav__number" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-auth-nav__item">
+                    <a class="menu-auth-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-social">
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <button class="close-mobile-menu" type="button" is-opened>
+            <svg class="close-mobile-button" width='40' height='40px'>
+                <use href='./Images/symbol-defs.svg#icon-close_40px'></use>
+            </svg>
+        </button>
+    </div>
+<!----- навигация ----->
     <header class="header">
         <div class="container container__header">
             <a class="header__logo" href=""><span class="header__logo-web">Web</span>Studio</a>
@@ -44,6 +90,17 @@
                 </li>
             </ul>
         </div> 
+    </header>
+<!-------- навигация 480px -------->
+    <header class="mobile-header">
+        <div class="container container-header-mobile">
+            <a class="header__logo" href=""><span class="header__logo-web">Web</span>Studio</a>
+            <button class="burgerbox" data-burger-btn type="menu">
+                <svg class="burger" width='40' height='40px'>
+                    <use href='./Images/symbol-defs.svg#icon-menu-40px'></use>
+                </svg>
+            </button>
+        </div>
     </header>
 <!--------- портфолио ---------->
     <main>
@@ -178,7 +235,7 @@
 <!----- подвал ----->
     <footer class="footer">
         <div class="container footer-container">
-            <div>
+            <div class="address-container">
                 <a class="footer__logo" href=""><span class="footer__logo-web">Web</span>Studio</a>
                     <address>
                         <ul class="footer__aut">
@@ -239,6 +296,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer>   
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -53,27 +53,45 @@
     </div>
 <!--- мобильное меню --->
     <div class="mobile-backdrop is-opened" data-menu-container>
-        <div>
-            <ul>
-                <li>Студия</li>
-                <li>Портфолио</li>
-                <li>Контакты</li>
+        <div class="menu-site-nav">
+            <ul class="menu-site-nav__list">
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link active-menu" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link current-menu" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-site-nav__item">
+                    <a class="menu-site-nav__link" href="">Контакты</a>
+                </li>
             </ul>
         </div>
-        <div>
-            <ul>
-                <li>+38 096 111 11 11</li>
-                <li>info@devstudio.com</li>
+        <div class="menu-auth-nav">
+            <ul class="menu-auth-nav__list">
+                <li class="menu-auth-nav__item">
+                    <a class="menu-auth-nav__number" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-auth-nav__item">
+                    <a class="menu-auth-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
             </ul>
-            <ul>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>LinkedIn</li>
+            <ul class="menu-social">
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">LinkedIn</a>
+                </li>
             </ul>
         </div>
-        <button class="close-mobile-menu" type="button" data-menu-close>
-            <svg>
+        <button class="close-mobile-menu" type="button" is-opened>
+            <svg class="close-mobile-button" width='40' height='40px'>
                 <use href='./Images/symbol-defs.svg#icon-close_40px'></use>
             </svg>
         </button>
