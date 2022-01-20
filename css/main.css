@@ -17,12 +17,6 @@ body {
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    min-width: 480px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -45,13 +39,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .container {
@@ -859,6 +846,10 @@ img {
           border-radius: 4px;
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .hero {
   padding: 200px 0;
   background-color: #2f303a;
@@ -897,6 +888,24 @@ img {
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Images/hero-768@2x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@2x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Images/hero-768@3x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@3x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-768@3x.jpg);
   }
 }
 
@@ -1705,6 +1714,7 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -1958,7 +1968,6 @@ address {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
   }
 }
 
@@ -2017,7 +2026,7 @@ address {
 }
 
 .footer-subscribe__subscribe-input {
-  width: 358px;
+  width: 365px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -2029,6 +2038,12 @@ address {
   background-color: inherit;
   padding-left: 16px;
   color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-subscribe__subscribe-input {
+    width: 100%;
+  }
 }
 
 .footer-subscribe__subscribe-box {
