@@ -29,10 +29,12 @@ img {
     min-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
+    justify-content: center;
   }
 }
 .container {
@@ -43,12 +45,10 @@ img {
 
   @media screen and (max-width: 767px) {
     width: 480px;
-    justify-content: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
-    justify-content: center;
   }
 }
 .section__tittle {

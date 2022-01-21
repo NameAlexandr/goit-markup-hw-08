@@ -46,6 +46,10 @@ img {
     min-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -53,6 +57,10 @@ img {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -66,20 +74,12 @@ img {
 @media screen and (max-width: 767px) {
   .container {
     width: 480px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
