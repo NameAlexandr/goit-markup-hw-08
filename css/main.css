@@ -1713,6 +1713,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .card-set__item {
+    width: 100%;
     height: auto;
     margin-left: 0;
     margin-top: 0;
