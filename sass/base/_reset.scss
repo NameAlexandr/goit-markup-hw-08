@@ -4,6 +4,7 @@ body {
   letter-spacing: 0.03em;
   background: var(--primary-background-color);
   color: var(--primary-text-color);
+  min-width: 480px;
 }
 h1,
 h2,
@@ -44,7 +45,7 @@ img {
   padding: 0 15px;
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
