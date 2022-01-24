@@ -75,6 +75,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 .advance__text {
   font-size: 14px;
