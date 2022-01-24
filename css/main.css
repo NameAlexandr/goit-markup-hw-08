@@ -15,10 +15,6 @@ body {
   letter-spacing: 0.03em;
   background: var(--primary-background-color);
   color: var(--primary-text-color);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 h1,
