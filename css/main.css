@@ -15,7 +15,10 @@ body {
   letter-spacing: 0.03em;
   background: var(--primary-background-color);
   color: var(--primary-text-color);
-  min-width: 480px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1,
@@ -44,13 +47,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .section {
-    min-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -74,7 +72,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -125,14 +123,6 @@ img {
   opacity: 1;
   z-index: 1;
   background-color: white;
-}
-
-.mobile-backdrop.is-opened {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.mobile-backdrop {
   padding: 48px 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -147,6 +137,11 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.mobile-backdrop.is-opened {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .close-mobile-menu {
@@ -908,10 +903,15 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero {
+    padding: 118px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Images/hero-background/hero-480px.jpg);
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-480px.jpg);
     background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-480px.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-480px.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
 }
 
@@ -940,6 +940,10 @@ img {
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-768px.jpg);
     background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-768px.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-background/hero-768px.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
 }
 
@@ -1141,6 +1145,12 @@ img {
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .advance__tittle {
+    text-align: center;
+  }
+}
+
 .advance__text {
   font-size: 14px;
   line-height: 1.71;
@@ -1172,7 +1182,11 @@ img {
 
 @media screen and (max-width: 1199px) {
   .section--no-padding-top {
-    display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 }
 

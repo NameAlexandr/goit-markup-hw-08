@@ -7,16 +7,14 @@
   opacity: 1;
   z-index: 1;
   background-color: white;
-}
-.mobile-backdrop.is-opened {
-  opacity: 0;
-  pointer-events: none;
-}
-.mobile-backdrop {
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.mobile-backdrop.is-opened {
+  opacity: 0;
+  pointer-events: none;
 }
 .close-mobile-menu {
   position: absolute;
