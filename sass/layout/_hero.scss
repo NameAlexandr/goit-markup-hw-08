@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../Images/hero-background/hero-1200px.jpg);
+    url(../../Images/background/hero1200.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../Images/hero-background/hero-1200px@2x.jpg);
+      url(../../Images/background/hero1200@2x.jpg);
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
@@ -28,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../Images/hero-background/hero-1200px@3x.jpg);
+      url(../../Images/background/hero1200@3x.jpg);
   }
 }
 
@@ -40,7 +40,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../Images/hero-background/hero-480px.jpg);
+      url(../../Images/background/hero480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +52,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../Images/hero-background/hero-480px@2x.jpg);
+        url(../../Images/background/hero480@2x.jpg);
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
@@ -62,7 +62,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../Images/hero-background/hero-480px@3x.jpg);
+        url(../../Images/background/hero480@3x.jpg);
     }
   }
 }
@@ -74,7 +74,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../Images/hero-background/hero-768px.jpg);
+      url(../../Images/background/hero768.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,7 +86,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../Images/hero-background/hero-768px@2x.jpg);
+        url(../../Images/background/hero768@2x.jpg);
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
@@ -96,7 +96,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../Images/hero-background/hero-768px@3x.jpg);
+        url(../../Images/background/hero768@3x.jpg);
     }
   }
 }
