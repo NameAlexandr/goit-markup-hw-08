@@ -137,6 +137,7 @@ address {
   @media screen and (max-width: 767px) {
     align-items: center;
     text-align: center;
+    width: 100%;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -156,13 +157,15 @@ address {
   color: white;
   @media screen and (max-width: 767px) {
     max-width: 365px;
+    width: 100%;
   }
 }
 .footer-subscribe__subscribe-box {
   margin-left: auto;
   @media screen and (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    justify-content: center;
+    max-width: 365px;
     width: 100%;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {

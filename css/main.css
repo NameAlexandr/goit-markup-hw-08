@@ -1181,11 +1181,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .section--no-padding-top {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    display: none;
   }
 }
 
@@ -2046,6 +2042,7 @@ address {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -2085,6 +2082,7 @@ address {
 @media screen and (max-width: 767px) {
   .footer-subscribe__subscribe-input {
     max-width: 365px;
+    width: 100%;
   }
 }
 
@@ -2094,8 +2092,12 @@ address {
 
 @media screen and (max-width: 767px) {
   .footer-subscribe__subscribe-box {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 365px;
     width: 100%;
   }
 }

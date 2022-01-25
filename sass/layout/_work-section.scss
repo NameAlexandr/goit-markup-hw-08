@@ -6,11 +6,7 @@
 }
 .section--no-padding-top {
   @media screen and (max-width: 1199px) {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    display: none;
   }
 }
 
