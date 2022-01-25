@@ -312,9 +312,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: -webkit-calc(100% - 15px);
-    width: calc(100% - 15px);
-    height: auto;
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -1425,6 +1424,7 @@ img {
             flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    width: auto;
   }
 }
 
@@ -1455,7 +1455,6 @@ img {
             flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-    width: auto;
   }
 }
 
