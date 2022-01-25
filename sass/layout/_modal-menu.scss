@@ -38,6 +38,7 @@
 .active-menu {
   color: #2196f3;
 }
+
 .menu-auth-nav__list {
   margin-bottom: 64px;
 }
@@ -62,6 +63,7 @@
 }
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 .menu-social__item:not(:last-child)::after {
   content: "";
